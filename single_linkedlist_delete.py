@@ -6,6 +6,7 @@ class Node:
 class single_linkedlist:
     def __init__(self):
         self.head=None
+        
     def delete_from_beg(self):
         if(self.head is None):
             print("Nothing to delete")
@@ -15,6 +16,7 @@ class single_linkedlist:
             self.head=self.head.link
             temp=None
             print("Deleted data is:",x)
+            
     def delete_from_end(self):
         if(self.head is None):
             print("Nothing to delete")
@@ -59,6 +61,7 @@ class single_linkedlist:
             while(temp is not None):
                 print(temp.info,end=" ")
                 temp=temp.link
+                
 if __name__=="__main__":
     sl=single_linkedlist()
     while(1):
